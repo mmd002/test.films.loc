@@ -1,0 +1,41 @@
+; $Id: ninesixty.info,v 1.1.2.5.4.2 2011/01/11 01:08:49 dvessel Exp $
+
+name = films
+description = Custom theme using the 960 Grid System. See the "README.txt" file within the theme folder for more information.
+core = 7.x
+engine = phptemplate
+
+; Stylesheets. Anything within the "framework" folder will be placed before all others.
+#stylesheets[all][] = https://s3-us-west-2.amazonaws.com/film.loc/css/reset.css
+#stylesheets[all][] = https://s3-us-west-2.amazonaws.com/film.loc/css/text.css
+#stylesheets[all][] = https://s3-us-west-2.amazonaws.com/film.loc/css/960.css
+#stylesheets[all][] = styles/framework/debug.css
+
+; Theme specific styles. Any sub-themes should override this.
+#stylesheets[all][] = https://s3-us-west-2.amazonaws.com/film.loc/css/styles.css
+
+regions[page_top]       = Page top
+regions[header]         = Header
+regions[slider]			= Slider
+regions[search_box]     = Search Box
+regions[highlighted]    = Highlight
+regions[help]           = Help
+regions[content]        = Content
+regions[player]			= Video player
+regions[sidebar_first]  = Left sidebar
+regions[sidebar_second] = Right sidebar
+regions[footer]         = Footer
+regions[page_bottom]    = Page bottom
+
+scripts[] = js/jqplaceholder/jquery.placeholder.min.js
+scripts[] = js/fixedBlock/fixedBlock.js
+scripts[] = js/modal/jquery.arcticmodal.js
+#scripts[] = https://s3-us-west-2.amazonaws.com/film.loc/js/launch.js
+
+
+; Information added by drupal.org packaging script on 2011-01-11
+version = "7.x-1.0"
+core = "7.x"
+project = "ninesixty"
+datestamp = "1294708616"
+

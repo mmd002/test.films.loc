@@ -1,0 +1,4 @@
+/*launch*/
+jQuery(document).ready(function(){
+	jQuery('input').placeholder();
+});

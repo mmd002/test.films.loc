@@ -1,0 +1,32 @@
+jQuery(function($) {
+  function fixDiv() {
+    var $topFilms = $('#block-views-film-block');
+    var $social = $('#block-addtoany-addtoany-button');
+    if($('#block-user-login')==true)
+
+    if ($(window).scrollTop() > 850){
+      $topFilms.css({
+        'position': 'fixed',
+        'top': '10px',
+        'width' : '220px'
+      });
+       $social.css({
+        'position': 'fixed',
+        'top': '350px',
+        'width' : '220px'
+      });
+    }  
+    else{
+      $topFilms.css({
+        'position': 'relative',
+        'top': 'auto'
+      });
+    $social.css({
+        'position': 'relative',
+        'top': 'auto'
+      });
+    }
+  }
+  $(window).scroll(fixDiv);
+  fixDiv();
+});

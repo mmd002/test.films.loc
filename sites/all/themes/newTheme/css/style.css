@@ -1,0 +1,199 @@
+/**
+ * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
+ * remove this comment and start adding your styles to this file.
+ */
+#views-nivo-slider-slider-nivo-block{
+	width: 100% !important;
+	height: auto !important;
+}
+
+.modal-dialog {
+	display: table;
+	width: auto !important;
+	height: auto !important;
+}
+
+.zoom_wrap {
+	position: fixed;
+	padding: 20px;
+}
+
+.zoom_wrap .glyphicon {
+	display: block;
+	font-size: 20px;
+	margin: 20px 0;
+	cursor: pointer;
+}
+
+.parallax img{
+	width: 70%;
+	height: 70%;
+	position: absolute;
+	left: 15%;
+	-webkit-box-shadow: 0 0 100px #000;
+	-moz-box-shadow: 0 0  100px #000;
+	box-shadow: 0 0 100px #000;
+}
+
+.run {
+	width: 64px;
+	height: 64px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: url(http://community.digitalmediaacademy.org/wp-content/uploads/2010/10/Mario-8-bit.gif);
+	-webkit-background-size: cover;
+	background-size: cover;
+	animation:linear mario-run 5s;
+	z-index: 9999;
+
+}
+
+@keyframes mario-run {
+	/*0% {bottom: 5%;left: 0;}
+	5% {bottom: 10%;left: 5%;}
+	10% {bottom: 5%;left: 10%; }
+	15% {bottom: 0; left: 15%;}
+	20% {bottom: 5%; left: 20%;}
+	25% {bottom: 10%; left: 25%;}
+	30% {bottom: 5%; left: 30%;}
+	35% {bottom: 0; left: 35%;}
+	40% {bottom: 5%;left: 40%;}
+	45% {bottom: 10%;left: 45%;}
+	50% {bottom: 5%;left: 50%; transform: rotateY(180deg)}
+	55% {bottom: 0;left: 55%;}
+	60% {bottom: 5%;left: 60%;}
+	65% {bottom: 10%;left: 65%;}
+	70% {bottom: 5%;left: 70%;}
+	55% {bottom: 0;left: 55%;}
+	60% {bottom: 5%;left: 60%;}
+	65% {bottom: 10%;left: 65%;}
+	70% {bottom: 5%;left: 70%;}
+	75% {bottom: 0;left: 75%;	}
+	80% {bottom: 5%;left: 80%;}
+	85% {bottom: 10%;left: 85%;}
+	90% {bottom: 5%;left: 90%;}
+	95% {bottom: 0;left: 95%;}
+	100% {bottom: 5%;left: 100%;}*/
+	0% {bottom: 0;left: 10%; opacity: 1;}
+	15% {bottom: 5%;left: 15%;}
+	30% {bottom: 10%; left: 20%;}
+	45% {bottom: 5%;left: 25%;} 
+	49% {-moz-transform: rotateY(0deg);} 
+	50% {bottom: 0%; left: 30%; -moz-transform: rotateY(180deg);}
+	65% {bottom: 5%;left: 25%;-moz-transform: rotateY(180deg);}
+	75% {bottom: 10%; left: 20%; -moz-transform: rotateY(180deg);}
+	85% {bottom: 5%;left: 15%; -moz-transform: rotateY(180deg); opacity: 0.8;} 
+	100% {bottom: 0%; left: 10%; -moz-transform: rotateY(180deg);opacity: 0;}
+}
+
+.load {
+	display: none;
+}
+
+.red,
+.yellow,
+.green,
+.blue {
+	display: block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	top: 25%;
+	position: absolute;
+	opacity: 0;
+}
+.blue {
+	background: #0099CB;
+	-webkit-animation: load 2s ease-in-out infinite;
+	-o-animation: load 2s ease-in-out infinite;
+	animation: load 2s ease-in-out infinite;
+
+
+}
+
+.red {
+
+	background: #FE4445;
+	-webkit-animation: load 2s ease-in-out infinite 0.3s;
+	-o-animation: load 2s ease-in-out infinite 0.3s;
+	animation: load 2s ease-in-out infinite 0.3s;
+
+}
+.yellow {
+
+	background: #FFBB34;
+	-webkit-animation: load 2s ease-in-out infinite 0.6s;
+	-o-animation: load 2s ease-in-out infinite 0.6s;
+	animation: load 2s ease-in-out infinite 0.6s;
+
+}
+.green {
+
+	background: #99CC01;
+	-webkit-animation: load 2s ease-in-out infinite 0.9s;
+	-o-animation: load 2s ease-in-out infinite 0.9s;
+	animation: load 2s ease-in-out infinite 0.9s;
+
+}
+
+
+@keyframes load {
+	0%{left: 0; z-index: 999; opacity: 0.2;}
+	25% {left: 50%;opacity: 1;}
+	50% {left: 50%;}
+	75% {left: 50%; opacity: 1;}
+	100% {left: 100%; opacity: .2;}
+}
+
+.load.active {
+	display: block;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 100px;	
+	z-index: 100;
+}
+
+input[type='range']{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+input[type='range']::-moz-range-thumb {
+	background: #0099CB;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    cursor: pointer;
+}
+
+input[type='range']::-webkit-slider-thumb {
+	background: #0099CB;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    cursor: pointer;
+}
+
+
+input[type='range'] {
+	/border: 1px solid #3c3c3c;
+	background : -moz-linear-gradient(left, #0099CB 50%, #99CC01 50%);
+	background : -webkit-linear-gradient(left, #0099CB 50%, #99CC01 50%);
+	height: 20px;
+	border-radius: 5px;
+}
+
+  input[type='range']::-moz-range-track {
+    background: transparent;   
+ } 
+
+.wrap-range {
+	width: 200px;
+}
+
+
